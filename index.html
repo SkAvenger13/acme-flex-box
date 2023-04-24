@@ -4,9 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Acme Layout</title>
+    <link rel="'stylesheet" href="style.css">
 </head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    #nav-bar {
+        background-color: dodgerBlue;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+    #nav-bar ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
+    }
+    #nav-bar li {
+        margin: 0 20px 0 20px;
+        align-self: center;
+    }
+    #nav-bar li:first-of-type {
+        font-weight: bold;
+    }
+    #form {
+        color: gray;
+        display: flex;
+        flex-direction: column;
+
+    }
+    #form form {
+        border: solid;
+        border-radius: 15px;
+        align-items: center;
+        margin: auto;
+        width: 50%;
+        padding: 15px;
+    }
+
+</style>
 <body>
-    
+    <div id="nav-bar">
+        <h1>Acme Layout</h1>
+        <ul>
+            <li>Users</li>
+            <li>Departments</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div id="form">
+        <h2>Users</h2>
+        <form>
+            <h3>Create A User</h3>
+            <label for="first">First Name:</label>
+            <input id="first" type="text">
+            <label for="last">Last Name:</label>
+            <input id="last" type="text">
+            <label for="dept">Department:</label>
+            <select id="dept">
+                <option>Sofware</option>
+                <option>HR</option>
+                <option>Marketing</option>
+                <option>Big Wigs</option>
+            </select>
+        </form>
+    </div>
 </body>
 </html>
