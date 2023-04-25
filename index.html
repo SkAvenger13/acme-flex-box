@@ -35,16 +35,39 @@
         color: gray;
         display: flex;
         flex-direction: column;
-
     }
     #form form {
         border: solid;
         border-radius: 15px;
-        align-items: center;
         margin: auto;
         width: 50%;
         padding: 15px;
     }
+    #form .input1 {
+        display: flex;
+    }
+    #form .input2 {
+        display: flex;
+    }
+    #form .input3 {
+        display: flex;
+    }
+    #users {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 33%;
+
+    }
+    #users div {
+        border: solid;
+        border-radius: 15px;
+        padding: 15px;
+        margin: 40px;
+    }
+    #users h4 {
+        font-weight: bold;
+    }
+
 
 </style>
 <body>
@@ -60,18 +83,48 @@
         <h2>Users</h2>
         <form>
             <h3>Create A User</h3>
-            <label for="first">First Name:</label>
-            <input id="first" type="text">
-            <label for="last">Last Name:</label>
-            <input id="last" type="text">
-            <label for="dept">Department:</label>
-            <select id="dept">
+            <label class="input1" for="first">First Name:</label>
+            <input class="input1" id="first" type="text">
+            <label class="input2" for="last">Last Name:</label>
+            <input class="input2" id="last" type="text">
+            <label class="input3" for="dept">Department:</label>
+            <select class="input3" id="dept">
                 <option>Sofware</option>
                 <option>HR</option>
                 <option>Marketing</option>
                 <option>Big Wigs</option>
             </select>
         </form>
+    </div>
+    <div id="users">
+        <div>
+            <h4>User A</h4>
+            <p>insert text here</p>
+        </div>
+        <div>
+            <h4>User B</h4>
+            <p>insert text here</p>
+        </div>
+        <div>
+            <h4>User C</h4>
+            <p>insert text here</p>
+        </div>
+        <div>
+            <h4>User D</h4>
+            <p>insert text here</p>
+        </div>
+        <div>
+            <h4>User E</h4>
+            <p>insert text here</p>
+        </div>
+        <div>
+        <h4>User F</h4>
+        <p>insert text here</p>
+        </div>
+        <div>
+            <h4>User G</h4>
+            <p>insert text here</p>
+        </div>
     </div>
 </body>
 </html>
